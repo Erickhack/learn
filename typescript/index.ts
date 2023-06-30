@@ -92,3 +92,37 @@
 // for (const key in /*UserRole*/ UserRoles) {
 //   console.log(key);
 // }
+
+// type EventConfig<
+//   Event extends {
+//     kind: string;
+//   }
+// > = {
+//   [E in Event as E["kind"]]: (event: E) => void;
+// };
+
+// interface test1 {
+//   name: string;
+//   age: number;
+//   kind: string;
+// }
+
+// const test: EventConfig<test1> = {
+//   hello: (e) => {
+//     console.log(e);
+//   },
+// };
+
+// for (console.log("tet"); i < 10; i++) {
+//   console.log(i);
+// }
+
+// let i = 0;
+
+// do {
+//   console.log("do");
+//   i++;
+// } while (i < 2);
+// {
+//   console.log("while");
+// }
